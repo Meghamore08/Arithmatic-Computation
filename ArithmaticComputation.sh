@@ -2,7 +2,7 @@
 
 echo "Enter the three inputs a, b and c :"
 read a b c
-result3=$(($c + $a / $b))
+result4=$(($a % $b + $c))
 
-echo $result3
+echo $result4
 
