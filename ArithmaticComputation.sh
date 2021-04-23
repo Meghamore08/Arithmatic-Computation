@@ -3,12 +3,11 @@
 echo "Enter the three input a , b and c :"
 read a b c
 
-result1=$(($a + $b * $c))
-result2=$(($a * $b + $c))
-result3=$(($c + $a / $b))
-result4=$(($a % $b + $c))
+declare -A result
 
-echo $result1
-echo $result2
-echo $result3
-echo $result4
+result[1]=$(($a + $b * $c))
+result[2]=$(($a * $b + $c))
+result[3]=$(($c + $a / $b))
+result[4]=$(($a % $b + $c))
+
+echo "UseCases" ${result[@]}
